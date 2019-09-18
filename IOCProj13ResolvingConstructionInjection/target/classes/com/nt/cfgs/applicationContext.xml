@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 
+		<bean id="student" class="com.nt.beans.Student">
+			<constructor-arg value="101"/>
+			<constructor-arg value="Rahul"/>
+			<constructor-arg value="Kanhur"/>
+		</bean> -->
+		
+		<!-- by type -->
+		
+		<!-- <bean id="student" class="com.nt.beans.Student">
+			<constructor-arg value="Rahul" type="java.lang.String"/>
+			<constructor-arg value="Kanhur" type="java.lang.String"/>
+			<constructor-arg value="101" type="int"/>
+		</bean> -->
+		
+		<!-- by name -->
+		
+		<!-- <bean id="student" class="com.nt.beans.Student">
+			<constructor-arg value="101" name="sno"/>
+			<constructor-arg value="Kanhur" name="addrs"/>
+			<constructor-arg value="Rahul" name="sname"/>
+		</bean> -->
+		
+		<!-- by index -->
+		
+		<bean id="student" class="com.nt.beans.Student">
+			<constructor-arg value="101" index="0"/>
+			<constructor-arg value="Kanhur" index="1"/>
+			<constructor-arg value="Rahul" index="2"/>
+		</bean>
+</beans>
